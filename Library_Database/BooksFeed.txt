@@ -1,0 +1,27 @@
+1,The Lost Tribe,Picador USA
+2,The Shining,Doubleday
+3,Rita Hayworth and Shawshank Redemption,Viking Press
+4,It,Viking Press
+5,Harry Potter and the Sorcerer's Stone,Scholastic
+6,Harry Potter and the Chamber of Secrets,Scholastic
+7,Harry Potter and the Prisoner of Azkaban,Scholastic
+8,Harry Potter and the Goblet of Fire,Scholastic
+9,Harry Potter and the Order of the Phoenix,Scholastic
+10,Harry Potter and the Half-Blood Prince,Scholastic
+11,Harry Potter and the Deathly Hallows,Scholastic
+12,50 Shades of Grey,Vintage Books
+13,Great Expectations,Chapman & Hall
+14,Oliver Twist,Chapman & Hall
+15,Adventures of Huckleberry Finn,American Publishing Company
+16,Adventures of Tom Sawyer,American Publishing Company
+17,The Hobbit,Allen & Unwin
+18,The Lord of the Rings:The Fellowship of the Ring,Allen & Unwin
+19,The Lord of the Rings:The Two Towers,Allen & Unwin
+20,The Lord of the Rings:The Return of the King,Allen & Unwin
+21,The Sun Also Rises,Scribner
+22,The Old Man and the Sea,Scribner
+23,A Game of Thrones,Random House
+24,The Alchemist,Harper
+25,The Winner Stands Alone,Harper
+26,Maktub,Harper
+27,Like the Flowing River,Harper

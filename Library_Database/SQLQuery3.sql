@@ -1,0 +1,7 @@
+USE Library
+GO
+
+SELECT B.CardNo, B.Name
+FROM Borrower AS B LEFT JOIN BOOK_LOANS AS L
+ON B.CardNo = L.CardNo
+WHERE L.Bookid IS NULL
