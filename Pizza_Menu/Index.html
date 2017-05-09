@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="./css/pizzastyle.css">
+	<script src="./js/Index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
+		<div class="container">
+			<h1>Thomas' Pizzeria</h1>
+			<form id="menuForm">
+			<div class="menu popover-dismiss" data-toggle="popover" data-placement="left" data-content="Personal $6<br>Medium $10<br>Large $14<br>XLarge $16" data-html="true">
+					<h2>Size</h2>
+					<input class="size" type="radio" name="size" value="Personal"> Personal<br>
+					<input class="size" type="radio" name="size" value="Medium"> Medium<br>
+					<input class="size" type="radio" name="size" value="Large"> Large<br>
+					<input class="size" type="radio" name="size" value="Xlarge"> Extra Large
+			</div>
+			<div class="menu">
+					<h2>Sauce</h2>
+					<input class="sauce" type="radio" name="sauce" value="Marinara"> Marinara<br>
+					<input class="sauce" type="radio" name="sauce" value="White Sauce"> White<br>
+					<input class="sauce" type="radio" name="sauce" value="BBQ"> BBQ<br>
+					<input class="sauce" type="radio" name="sauce" value="No Sauce"> No Sauce
+			</div>
+				<div class="menu popover-dismiss" data-toggle="popover" data-placement="right" data-content="One complimentary meat and $1 for each additional meat.">
+					<h2>Meats</h2>
+					<input class="meats" type="checkbox" name="meats" value="Pepperoni">Pepperoni<br>
+					<input class="meats" type="checkbox" name="meats" value="Sausage">Sausage<br>
+					<input class="meats" type="checkbox" name="meats" value="Candian Bacon">Candian Bacon<br>
+					<input class="meats" type="checkbox" name="meats" value="Ground Beef">Ground Beef<br>
+					<input class="meats" type="checkbox" name="meats" value="Anchovy">Anchovy<br>
+					<input class="meats" type="checkbox" name="meats" value="Chicken">Chicken
+			</div>
+			<div class="menu popover-dismiss" data-toggle="popover" data-placement="left" data-content="One complimentary veggie and $1 for each additional veggie.">
+					<h2>Veggies</h2>
+					<input class="veggies" type="checkbox" name="veggies" value="Tomatoes">Tomatoes<br>
+					<input class="veggies" type="checkbox" name="veggies" value="Onions">Onions<br>
+					<input class="veggies" type="checkbox" name="veggies" value="Olives">Olives<br>
+					<input class="veggies" type="checkbox" name="veggies" value="Green Peppers">Green Peppers<br>
+					<input class="veggies" type="checkbox" name="veggies" value="Mushrooms">Mushrooms<br>
+					<input class="veggies" type="checkbox" name="veggies" value="Pineapple">Pineapple<br>
+					<input class="veggies" type="checkbox" name="veggies" value="Spinach">Spinach<br>
+					<input class="veggies" type="checkbox" name="veggies" value="Jalapeno">Jalapeno
+			</div>	
+			<div class="menu popover-dismiss" data-toggle="popover" data-placement="top" data-content="Additional $3 for extra cheese."">
+					<h2>Cheese</h2>
+					<input class="cheese" type="radio" name="cheese" value="Regular Cheese"> Regular<br>
+					<input class="cheese" type="radio" name="cheese" value="No Cheese"> No Cheese<br>
+					<input class="cheese" type="radio" name="cheese" value="Extra Cheese"> Extra Cheese
+			</div>
+			<div class="menu popover-dismiss" data-toggle="popover" data-placement="right" data-content="Additional $3 for stuffed crust.">
+					<h2>Crust</h2>
+					<input class="crust" type="radio" name="crust" value="Plain Crust"> Plain<br>
+					<input class="crust" type="radio" name="crust" value="Garlic Butter Crust"> Garlic Butter<br>
+					<input class="crust" type="radio" name="crust" value="Cheese Stuffed Crust"> Cheese Stuffed<br>
+					<input class="crust" type="radio" name="crust" value="Spicy Crust"> Spicy<br>
+					<input class="crust" type="radio" name="crust" value="House Special Crust"> House Special
+			</div>
+			</form>
+				<button class="button" onclick="getOrder()">
+					Order
+				</button>
+				<button id="cancel" class="button" onclick="cancelOrder()">
+					Cancel
+				</button>
+		
+			<div id="receipt">
+				<div id="title1">
+				</div>
+				<div id="title2">
+				</div>
+				<div id="showText1">
+				</div>
+				<div id="showText2">
+				</div>
+				<div id="totalPrice1">
+				</div>
+				<div id="totalPrice2">
+				</div>
+		
+			</div>
+		</div>
+	
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script>
+		$('.popover-dismiss').popover({
+		trigger: 'hover'
+		})
+	</script>
+  </body>
+</html>

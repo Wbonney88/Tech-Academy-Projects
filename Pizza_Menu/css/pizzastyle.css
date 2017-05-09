@@ -1,0 +1,138 @@
+html {
+	font-family: sans-serif;
+	font-size: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 14px;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.42857143;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../images/pizzabackground1.jpeg')
+}
+h1 {
+	font-size: 200%;
+	text-align: center;
+}
+
+	
+h2 {
+	text-align: center;
+	background-color: #B2B2FF;
+	border-radius: 25px 25px 0 0;
+	border-bottom: 2px solid black;
+	text-shadow: 1.5px 1.5px 5px #0000FF;
+}
+
+#receipt h3 {
+	text-align: center;
+	width: 273px;
+	background-color: #B2B2FF;
+	border-bottom: 2px solid black;
+	text-shadow: 1.5px 1.5px 5px #0000FF;
+}
+
+input[type="radio"] {
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+
+.container {
+  padding: 15px 15px;
+  text-align: center;
+  width: 650px;
+  border-radius: 25px;
+  margin: 0 auto;
+  opacity: .95;
+  display: block;
+}
+
+.container h1 {
+	color: white;
+	text-shadow: 3px 3px 3px #0000FF;
+}
+
+
+#menuForm {
+	margin: auto;
+	width: 550px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	border-radius: 25px;
+}
+
+.container .menu:nth-child(-n+6) {
+	background-color: #C0C0C0;
+	flex: 1 150px;
+	min-width: 0;
+	padding: 0 0 10px 0;
+	border: 2px solid black;
+	border-radius: 25px;
+	width: 150px;
+	height: 250px;
+	display: inline-block;
+	text-align: left;
+}
+
+.container .button {
+	background-color: #B2B2FF;
+	margin: 1% auto;
+	width: 100px;
+	height: 40px;
+	border-radius: 15px;
+	text-align: center;
+	text-shadow: .5px .5px 3px #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	font-family: serif;
+	font-weight: bold;
+	cursor: pointer;
+	opacity: .95;
+}
+
+#receipt {
+	opacity: 0;
+	margin: auto;
+	width: 550px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	background-color: #C0C0C0;
+	border: 2px solid black;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+#showText1 {
+	margin: auto;
+	width: 270px;
+}
+
+#showText2 {
+	margin: auto;
+	width: 270px;
+}
+
+#totalPrice1 {
+	margin: auto;
+	width: 270px;
+}
+
+#totalPrice2 {
+	margin: auto;
+	width: 270px;
+}
