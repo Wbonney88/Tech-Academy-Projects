@@ -42,7 +42,8 @@ def start(name="",age=0,gender="",income=0.0):
     name,age,gender,income = getInfo(name,age,gender,income)
     makePredictions(age,gender,income)
     getSponsors(age,income)
-
+    
+#This function satisfies the following criteria. Use of if, elif, else. 8. Use of a while loop,9. Use of a for loop, & 11. Create a tuple and iterate through it to print each item on a new line. 
 def getDisclaimer(answer=""):
     disclaimerTup = ("1. This is strictly for entertainment purposes","2. While we are called Crazy Bob's Texas Psychic Emporium no one here is named Bob, or from Texas","3. My psychic's licenses is currently being challenged by the state, and oddly enough PETA","4. Neither I, nor any of my staff claim to be truly psychic","5. And most importantly please remember this is all in good fun")
     for disclaimer in disclaimerTup:
@@ -60,6 +61,7 @@ def getDisclaimer(answer=""):
         else:
             answer = input("\nPlease just enter yes or no.")
 
+#This function uses the or operator and satisfies the following criteria. 1. Assign an integer to a variable, 2. Assign a string to a variable, 3. Assign a float to a variable, 4. Use the print function and.format, 12. Define a function that returns a string variable, 13. Print the results of the function to the shell. 
 def getInfo(name,age,gender,income):
     name = input("\nWhat is your name?").capitalize()
     print("\nThanks {}! Nice to meet you.  I'm not getting any strong feelings yet, let me get a little more information about you.  Hopefully that will open some channels.".format(name))
@@ -91,6 +93,7 @@ def makePredictions(age,gender,income,intro="",prediction1="",prediction2="",pre
     prediction3 = getPredict3(age,gender,income,prediction3)
     print("\n\n{} \n\n{} \n\n{} \n\n{}".format(intro,prediction1,prediction2,prediction3))
 
+#This function uses the and operator.
 def getIntro(age,gender,income,intro=""):
     if gender == "m" and age >= 25:
         intro = "Well partner things aren't great, but they could be worse."
@@ -102,6 +105,7 @@ def getIntro(age,gender,income,intro=""):
         intro = "I've got some great news little lady."
     return intro
 
+#This function uses -= operator.
 def getPredict1(age,gender,income,prediction1=""):
     if age >= 25:
         age -= 12
@@ -112,6 +116,7 @@ def getPredict1(age,gender,income,prediction1=""):
         prediction1 = "When you were younger you were younger you made all the right choices.  Too bad it didn't help..."
     return prediction1
 
+#This function uses the += operator.
 def getPredict2(age,gender,income,prediction2=""):
     if age > 25:
         age += 6
@@ -123,6 +128,7 @@ def getPredict2(age,gender,income,prediction2=""):
         prediction2 = "In about 10 years you will have the roughest year of your life.  On the upside you will learn a lot, and since it's the worst year of your life it can only get better from there."
     return prediction2
 
+#This function uses the following operators +,-,*,/,%
 def getPredict3(age,gender,income,prediction3="",incMod=0.0,savings=0.0,futureInc=0.0):
     if age >= 25 or income >= 60000:
         incMod = income % 3
@@ -141,6 +147,7 @@ def getPredict3(age,gender,income,prediction3="",incMod=0.0,savings=0.0,futureIn
         prediction3 = "Your going to kill it at work over the next 10 years, and 15 years from now your financial future looks great. Your future income will be around " + str(futureInc) + ", and your savings will be around " + str(savings) + ". So now let's discuss my payment."
     return prediction3
 
+#This function uses the not operator and satisfies criteria 10. Create a list and iterate through it to print each item to a new line.
 def getSponsors(age,income):
     print("\n\nThanks for coming in. You should also check out some of our sponsors!")
     highIncOld = ["-Dr. Spaceman. If you need drugs we got'em","-cPant. Caffeine infused underwear that will destroy fat and cellulite...probably","-Hector's Premium Blueberry Tequila. For those of us who need a little help vomitting"]
