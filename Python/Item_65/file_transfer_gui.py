@@ -19,7 +19,7 @@ def load_gui(self):
     self.txt_tfiles.grid(row=3,column=0,columnspan=2,padx=(5,0),sticky=E+N)
 
 #Defining and resizing the search button images.
-    magImage = PhotoImage(file="..\..\..\..\Desktop\My_Project\Python\Item_65\\mag_glass.gif")
+    magImage = PhotoImage(file=".\\mag_glass.gif")
     buttonImage = magImage.subsample(13,13)
     Button.img = buttonImage
     
